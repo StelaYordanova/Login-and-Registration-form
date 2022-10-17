@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="button">
+        <button id="lgn-btn">Login</button>
+        <button id="reg-btn">Register</button>
+    </div>
+    <div id="login-container">
+        <h2>Login</h2>
+        <form method="POST" id="login-form">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" />
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+            </div>
+            <input type="submit" value="Login">
+            <p style="color: red;" id="login-general-errors"></p>
+        </form>
+        <h3 id="welcome-msg"></h3>
+    </div>
+    <div id="register-container" style="display:none">
+        <h2>Register</h2>
+
+        <form method="POST" id="register-form">
+            <div>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname">
+                <p style="color: red;"></p>
+            </div>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname">
+                <p style="color: red;"></p>
+            </div>
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username">
+                <p style="color: red;"></p>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+                <p style="color: red;"></p>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" name="password">
+                <p style="color: red;"></p>
+            </div>
+            <div>
+                <label for="repeatPassword">Repeat Password:</label>
+                <input type="password" name="repeatPassword">
+                <p style="color: red;"></p>
+            </div>
+            <input type="submit" value="Register">
+            <p id="general-errors"></p>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
